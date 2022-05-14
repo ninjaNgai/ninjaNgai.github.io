@@ -1,4 +1,4 @@
-import * as React from "react";
+import { Suspense } from "react";
 import AppBar from "@mui/material/AppBar";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
@@ -10,8 +10,9 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Avatar } from "@mui/material";
 import { lightGreen } from "@mui/material/colors";
 import Copyright from "./Copyright";
+import Viewer from "./Viewer";
 
-const theme = createTheme();
+const theme = createTheme(); // Needed for MUI
 
 export default function Main() {
   return (
@@ -25,6 +26,7 @@ export default function Main() {
       <main>
         {/* Hero unit */}
         <Box
+          component="div"
           sx={{
             bgcolor: "background.paper",
             pt: 8,
@@ -57,14 +59,13 @@ export default function Main() {
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
+          <Viewer />
           <Typography
             variant="subtitle1"
             align="center"
             color="text.secondary"
             component="p"
-          >
-            Add 3d model
-          </Typography>
+          ></Typography>
         </Container>
       </main>
       {/* Footer */}

@@ -2,3 +2,8 @@
     text-align: left;
     padding: 1rem 0 0 1rem;
 }
+
+.viewer-container {
+    width: 100%;
+    height: 100%;
+}
