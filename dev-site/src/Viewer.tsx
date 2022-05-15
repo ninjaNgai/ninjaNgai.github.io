@@ -14,7 +14,7 @@ export default function Viewer() {
       <Canvas>
         <Suspense fallback={null}>
           <Model />
-          <Environment {...envProps} files="studio024.hdr" />
+          <Environment {...envProps} files="studio022.hdr" />
         </Suspense>
       </Canvas>
     </div>
