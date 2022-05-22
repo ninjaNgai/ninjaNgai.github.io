@@ -1,8 +1,14 @@
 # ninjaNgai Dev Site
 
+Site: https://ninjangai.github.io/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 The `master` branch will contain the React app's source code, while the `gh-pages` branch will contain the distributable version of the React app.
+
+## References
+
+Updloading an `.gltf`: https://gltf.pmnd.rs/
 
 ## Available Scripts
 
